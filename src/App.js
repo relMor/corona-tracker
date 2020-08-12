@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, {PureComponent } from "react";
 import styles from "./App.module.css";
 
 import { Cards, Chart, CountryPicker } from "./components";
 import { fetchData } from "./api";
 import coronaImage from "./assets/image.png";
 
-class App extends Component {
+class App extends PureComponent {
   state = {
     data: {},
     country: "",
